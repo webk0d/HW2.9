@@ -41,7 +41,7 @@ class ViewController: UIViewController {
         sender.setTitle("Next: \(animation.name)", for: .normal)
     }
     
-    func setAnimationLabel() {
+    private func setAnimationLabel() {
         animationPresetLabel.text = animation.name
         animationCurveLabel.text = animation.curve
         animationForceLabel.text = String(format: "%.02f", animation.force)
